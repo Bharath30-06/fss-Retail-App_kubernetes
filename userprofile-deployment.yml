@@ -23,14 +23,14 @@ spec:
           value: "mongodb://mongodb:27017/myDatabase"  # Match this to your MongoDB deployment
         - name: SESSION_SECRETVAR
           valueFrom:
-            secretkeyRef:
+            secretKeyRef:
               name: my-secretexample
               key: SESSION_SECRET
         - name: EMAIL_USER
           value: "chagantyteja2502@gmail.com"
         - name: EMAIL_PASSVAR
           valueFrom:
-            secretkeyRef:
+            secretKeyRef:
               name: my-secretexample
               key: EMAIL_PASS
             
